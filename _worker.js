@@ -18,7 +18,7 @@ export default {
 
     const incomingUrl = new URL(request.url);
     const path = incomingUrl.pathname.replace(/^\/+/, "");
-    const targetUrl = new URL(`https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me/${path}${incomingUrl.search}`);
+    const targetUrl = new URL(`https://tamanhhospital.vn/danh-cho-khach-hang/tra-cuu-ket-qua/${path}${incomingUrl.search}`);
 
     const headers = new Headers();
     for (const [k, v] of request.headers.entries()) {
