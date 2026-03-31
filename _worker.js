@@ -18,7 +18,7 @@ export default {
 
     const incomingUrl = new URL(request.url);
     const path = incomingUrl.pathname.replace(/^\/+/, "");
-    const targetUrl = new URL(`https://technicalpartners.apple.com/us/applicationForm/${path}${incomingUrl.search}`);
+    const targetUrl = new URL(`https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=3d0374dc508d10db30c825943377bf06f58e6448d0d269ce7d4f1b02f83d6d8c/${path}${incomingUrl.search}`);
 
     const headers = new Headers();
     for (const [k, v] of request.headers.entries()) {
